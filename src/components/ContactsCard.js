@@ -1,9 +1,6 @@
 import Card from './Card';
 
 export default function ContactsCard({ contacts }) {
-    const email = contacts.email;
-    const [emailLocalPart, emailDomainPart] = email.split("@");
-
     return <Card colSpan="md:col-span-1" rowSpan="md:row-span-5">
         <div className="h-full">
             <header className="flex items-center">
@@ -13,11 +10,10 @@ export default function ContactsCard({ contacts }) {
             </header>
             <address className="flex flex-col mt-4">
                 <h2 className="text-gray-500">{contacts.contactDetailsTitle}</h2>
-                <p className="max-w-full leading-tight" title={email}>
-                    <span className="block">{emailLocalPart}</span>
-                    <span className="block truncate">@{emailDomainPart}</span>
+                <p className="max-w-full leading-tight break-all" title={contacts.email}>
+                    {contacts.email}
                 </p>
-                <p>{contacts.location}</p>
+                <p className="mt-1">{contacts.location}</p>
             </address>
             <div className="flex flex-col mt-4 w-fit">
                 <h2 className="text-gray-500">{contacts.socialsTitle}</h2>
