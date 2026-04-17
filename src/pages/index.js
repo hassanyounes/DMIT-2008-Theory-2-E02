@@ -7,10 +7,12 @@ import TimeZone from "../components/TimeZoneCard";
 import AboutMe from "../components/AboutMe";
 import Now from "../components/Now";
 import ContentPlaceholder from "../components/ContentPlaceholder";
+import WeatherCard from "../components/WeatherCard.jsx";
 import profileData from "@/data/profile.json";
+import { getWeather, getWeatherLocation } from "@/lib/weather";
 // import Globe from "../components/Globe";
 
-export default function Home() {
+export default function Home({ weather }) {
   useEffect(() => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       return;
@@ -76,6 +78,7 @@ export default function Home() {
         <ContactsCard contacts={profileData.contacts} />
         <TimeZone timeZone={profileData.timeZone} />
         <Now nowInfo={profileData.now} />
+        <WeatherCard weather={weather} />
         <Card
           colorText="text-neutral-100"
           colSpan="md:col-span-1"
@@ -120,4 +123,23 @@ export default function Home() {
       </main>
     </Layout>
   );
+}
+
+export async function getServerSideProps() {
+  let weather = null;
+
+  try {
+    weather = await getWeather({
+      apiKey: process.env.OPENWEATHER_API_KEY,
+      location: getWeatherLocation(profileData),
+    });
+  } catch (error) {
+    console.error("Unable to load weather information", error);
+  }
+
+  return {
+    props: {
+      weather,
+    },
+  };
 }
