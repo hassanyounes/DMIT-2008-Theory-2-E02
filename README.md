@@ -1,8 +1,10 @@
 # Theory 2
 
-> Student Name: **YOUR_NAME**
+**Student Name:** Hassan Younes  
+**GitHub Username:** [hassanyounes](https://github.com/hassanyounes)  
+**Deployed Site:** [hassanyounes.netlify.app](https://hassanyounes.netlify.app)
 
-![Website Screenshot](./docs/images/screenshot.png)
+![Website Screenshot](./public/preview.png)
 
 In this assignment, you will demonstrate your ability to
 
