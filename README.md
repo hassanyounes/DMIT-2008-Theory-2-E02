@@ -4,7 +4,7 @@
 **GitHub Username:** [hassanyounes](https://github.com/hassanyounes)  
 **Deployed Site:** [hassanyounes.netlify.app](https://hassanyounes.netlify.app)
 
-![Website Screenshot](./public/preview.png)
+![Website Screenshot](./docs/images/final-site.png)
 
 In this assignment, you will demonstrate your ability to
 
