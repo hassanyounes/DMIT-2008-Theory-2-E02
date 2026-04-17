@@ -41,7 +41,7 @@
   },
   "about": {
     "title": "About me",
-    "intro": "Hi, I'm Hassan, a DMIT student based in Edmonton who enjoys building practical, user-focused web projects.",
+    "intro": "Hi, I'm Hassan Younes, a DMIT student based in Edmonton who enjoys building practical, user-focused web projects.",
     "toolsIntro": "The tools I reach for most often are:",
     "tools": [
       "JavaScript",
@@ -51,13 +51,13 @@
       "HTML",
       "CSS"
     ],
-    "passion": "I like learning by building complete projects that connect frontend interfaces with real data, testing, and deployment workflows.",
-    "approach": "My approach is to keep things simple, readable, and dependable while improving a project step by step."
+    "passion": "I enjoy learning through hands-on projects that connect frontend interfaces with APIs, testing workflows, and real deployment experiences.",
+    "approach": "My approach is to keep things simple, readable, and dependable while improving each project step by step."
   },
   "contacts": {
     "title": "Let's start working together!",
     "contactDetailsTitle": "Contact Details",
-    "email": "105528011+hassanyounes@users.noreply.github.com",
+    "email": "hyounes2@nait.ca",
     "location": "Edmonton, Alberta, Canada",
     "socialsTitle": "Socials",
     "socialLinks": [
